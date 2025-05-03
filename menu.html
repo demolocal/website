@@ -22,6 +22,7 @@
       align-items: center;
       color: white;
       text-align: center;
+      overflow: hidden;
     }
 
     body::before {
@@ -43,16 +44,53 @@
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      animation: fadeInUp 1s ease forwards;
     }
 
     h1 {
       font-size: 2rem;
       margin-bottom: 10px;
+      animation: fadeIn 1s ease forwards;
     }
 
     p {
       font-size: 1rem;
       opacity: 0.8;
+      margin-bottom: 20px;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background-color: #d4af37;
+      color: black;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      animation: fadeInZoom 1.5s ease forwards;
+    }
+
+    .back-btn:hover {
+      background-color: #b9972f;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInZoom {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -60,6 +98,7 @@
   <div class="content">
     <h1>🍽️ Coming Soon</h1>
     <p>Το μενού μας ετοιμάζεται με αγάπη. Μείνετε συντονισμένοι!</p>
+    <a href="index.html" class="back-btn">← Back to Homepage</a>
   </div>
 </body>
 </html>
