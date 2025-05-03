@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Η Καντίνα του Μητσάρα</title>
+  <title>Local</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
@@ -13,19 +13,34 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ccff66; /* Λαχανί φόντο */
+      background: url('background.jpg') no-repeat center center fixed; /* Βάλε εδώ την εικόνα σου */
+      background-size: cover;
+      position: relative;
       color: white;
       text-align: center;
     }
 
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      background-color: rgba(112, 164, 6, 0.5); /* Λαχανί με διαφάνεια */
+      z-index: -1;
+    }
+
     .container {
       background-color: rgba(0, 0, 0, 0.75);
-      width: 90%;
-      max-width: 420px;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      width: 95%;
+      max-width: 520px;
+      margin: 30px auto;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
     }
 
     .logo img {
@@ -62,8 +77,13 @@
       filter: brightness(1.1);
     }
 
-    .menu-btn { background-color: #c00; }
-    .shop-btn { background-color: #e0b800; }
+    .btn img {
+      height: 20px;
+      vertical-align: middle;
+    }
+
+    .menu-btn { background-color: #d4af37dd; }
+    .shop-btn { background-color: #77aa4eb1; }
     .call-btn,
     .efood-btn,
     .box-btn,
@@ -118,26 +138,24 @@
 <body>
   <div class="container">
     <div class="logo">
-      <img src="51741ad4-c56c-42b8-85ac-9129ed965e80.png" alt="Λογότυπο">
+      <img src="logo.png" alt="Λογότυπο">
     </div>
-    <h1>Η Καντίνα του Μητσάρα</h1>
+    <h1>Local</h1>
 
     <a href="#" class="btn menu-btn"><i class="fas fa-book-open"></i> Menu</a>
     <a href="#" class="btn shop-btn"><i class="fas fa-store"></i> Το κατάστημά μας</a>
 
-    <div class="section-title">ΠΑΡΑΓΓΕΙΛΕ</div>
+    <div class="section-title">Order</div>
     <a href="tel:+1234567890" class="btn call-btn"><i class="fas fa-phone"></i> Τηλέφωνο</a>
-    <a href="#" class="btn efood-btn"><i class="fas fa-utensils"></i> e-food</a>
-    <a href="#" class="btn box-btn"><i class="fas fa-box"></i> box</a>
-    <a href="#" class="btn wolt-btn"><i class="fas fa-truck"></i> wolt</a>
-
-    <div class="section-title">ΠΛΗΡΟΦΟΡΙΕΣ</div>
-    <a href="#" class="btn map-btn"><i class="fas fa-map-marker-alt"></i> Χάρτης</a>
-    <a href="#" class="btn reviews-btn"><i class="fas fa-star"></i> Google Reviews</a>
+    <a href="https://www.e-food.gr/delivery/patra/local-7981963" class="btn efood-btn"><img src="efood.png" alt="efood"> e-food</a>
+    <div class="section-title">About Us</div>
+    <a href="https://g.co/kgs/bcvcqqL" class="btn map-btn"><i class="fas fa-map-marker-alt"></i> Χάρτης</a>
+    <a href="https://g.co/kgs/hXLey9Q" class="btn reviews-btn"><i class="fas fa-star"></i> Google Reviews</a>
 
     <div class="footer-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61574714537124"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/local_cafepatras/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/local_cafepatras/"><i class="fab fa-tiktok"></i></a>
     </div>
   </div>
 </body>
