@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Η Καντίνα του Μητσάρα</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ccff66; /* Λαχανί φόντο */
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.75);
+      width: 90%;
+      max-width: 420px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .logo img {
+      width: 100px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    .menu-btn { background-color: #c00; }
+    .shop-btn { background-color: #e0b800; }
+    .call-btn,
+    .efood-btn,
+    .box-btn,
+    .wolt-btn,
+    .map-btn,
+    .reviews-btn {
+      background-color: white;
+      color: black;
+    }
+
+    .section-title {
+      margin: 25px 0 10px;
+      font-weight: bold;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      padding: 5px 0;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .footer-icons {
+      margin-top: 20px;
+    }
+
+    .footer-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.3rem;
+      transition: transform 0.2s;
+    }
+
+    .footer-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 400px) {
+      .logo img {
+        width: 80px;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="51741ad4-c56c-42b8-85ac-9129ed965e80.png" alt="Λογότυπο">
+    </div>
+    <h1>Η Καντίνα του Μητσάρα</h1>
+
+    <a href="#" class="btn menu-btn"><i class="fas fa-book-open"></i> Menu</a>
+    <a href="#" class="btn shop-btn"><i class="fas fa-store"></i> Το κατάστημά μας</a>
+
+    <div class="section-title">ΠΑΡΑΓΓΕΙΛΕ</div>
+    <a href="tel:+1234567890" class="btn call-btn"><i class="fas fa-phone"></i> Τηλέφωνο</a>
+    <a href="#" class="btn efood-btn"><i class="fas fa-utensils"></i> e-food</a>
+    <a href="#" class="btn box-btn"><i class="fas fa-box"></i> box</a>
+    <a href="#" class="btn wolt-btn"><i class="fas fa-truck"></i> wolt</a>
+
+    <div class="section-title">ΠΛΗΡΟΦΟΡΙΕΣ</div>
+    <a href="#" class="btn map-btn"><i class="fas fa-map-marker-alt"></i> Χάρτης</a>
+    <a href="#" class="btn reviews-btn"><i class="fas fa-star"></i> Google Reviews</a>
+
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</body>
+</html>
